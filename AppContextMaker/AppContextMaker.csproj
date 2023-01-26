@@ -11,4 +11,11 @@
       <PackageReference Include="Mono.Cecil" Version="0.11.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="d2.exe" />
+      <Content Include="d2.exe">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
