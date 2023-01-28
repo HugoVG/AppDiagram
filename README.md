@@ -20,3 +20,7 @@ Known bugs
 - Events not being set up
 - Delegates not being set up
 - More suprise bugs
+
+GUI -> VisualAppExplorer
+Library -> AppExplorer
+Commandline -> AppContextMaker
