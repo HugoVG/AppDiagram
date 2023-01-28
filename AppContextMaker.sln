@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppContextMaker", "AppContextMaker\AppContextMaker.csproj", "{402D096B-BCDC-4BEF-9907-72440DE692DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppExplorer", "AppExplorer\AppExplorer.csproj", "{8E96FFF7-A7F2-435E-910D-06F73761CDC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualAppExplorer", "VisualAppExplorer\VisualAppExplorer.csproj", "{67DA8C3E-8AFB-4EEE-B9B3-BBEA1877CB4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{402D096B-BCDC-4BEF-9907-72440DE692DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{402D096B-BCDC-4BEF-9907-72440DE692DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{402D096B-BCDC-4BEF-9907-72440DE692DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E96FFF7-A7F2-435E-910D-06F73761CDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E96FFF7-A7F2-435E-910D-06F73761CDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E96FFF7-A7F2-435E-910D-06F73761CDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E96FFF7-A7F2-435E-910D-06F73761CDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DA8C3E-8AFB-4EEE-B9B3-BBEA1877CB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DA8C3E-8AFB-4EEE-B9B3-BBEA1877CB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DA8C3E-8AFB-4EEE-B9B3-BBEA1877CB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DA8C3E-8AFB-4EEE-B9B3-BBEA1877CB4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
