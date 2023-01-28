@@ -1,5 +1,7 @@
 Tired of making diagrams in class? Is writing documentation your least favourite activity? Or just want to see your beautiful work of art in a diagram or markdown files?
 
+> ONLY WORKS FOR CIL COMPATIBLE DLL'S
+
 Try AppDiagram!
 
 - [D2](https://d2lang.com/) support
