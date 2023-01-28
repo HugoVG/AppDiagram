@@ -1,0 +1,24 @@
+﻿<Window x:Class="VisualAppExplorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        xmlns:converters="http://sharpvectors.codeplex.com/svgc/"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+            <ui:SimpleStackPanel Margin="12" Spacing="24">
+                <TextBlock Text="AppExplorer" Style="{StaticResource HeaderTextBlockStyle}" />
+                <Button Content="Select CIL DLL" Click="btnOpenFiles_Click" Style="{StaticResource AccentButtonStyle}" />
+                <ui:RadioButtons Header="Select a DiagramStyle" ItemsSource="{Binding DiagramMakerTypes}" x:Name="LayoutManager" SelectedIndex="0" MaxColumns="10"/>
+                <!--Show error label -->
+                <TextBlock x:Name="ErrorLabel" Text="{Binding Error}" Foreground="Red"/>
+                
+                <!--Show SVG-->
+                <converters:SvgViewbox Source="" x:Name="SVGViewer" />
+            </ui:SimpleStackPanel>
+        </ScrollViewer>
+</Window>

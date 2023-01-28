@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ModernWpfUI" Version="0.9.6"/>
+        <PackageReference Include="SharpVectors" Version="1.8.1"/>
+        <PackageReference Include="SharpVectors.Wpf" Version="1.8.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\AppExplorer\AppExplorer.csproj"/>
+    </ItemGroup>
+
+</Project>
