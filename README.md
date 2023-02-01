@@ -1,6 +1,12 @@
+# CIL to D2
+
+![Banner](https://github.com/MrBlenny/py-d2/raw/main/docs/images/banner.png)
+
+An unofficial converter for CIL(C#, Visual Basic, F#, C++ CLR) DLL's to [D2](https://d2lang.com/)
+
 Tired of making diagrams in class? Is writing documentation your least favourite activity? Or just want to see your beautiful work of art in a diagram or markdown files?
 
-> ONLY WORKS FOR CIL COMPATIBLE DLL'S
+> ONLY WORKS FOR CIL(C#, Visual Basic, F#, C++ CLR) COMPATIBLE DLL'S (Unity works if there is no IL2CPP package)
 
 Try AppDiagram!
 
