@@ -1,0 +1,75 @@
+direction: right
+AppContextMaker.Tests.PauseMenu {
+	shape: class
+#Fields:
+	"+Paused" : "AppContextMaker.Tests.PauseMenu"
+	"+PauseMenuCanvas" : "AppContextMaker.Tests.PauseMenu"
+#Properties:
+#Methods:
+	"-Start()" : "Void"
+	"-Update()" : "Void"
+	"+MainMenuButton()" : "Void"
+}
+AppContextMaker.Tests.KeyCode {
+	shape: class
+#Fields:
+#Properties:
+	"+Escape {get; set;}" : "Object"
+#Methods:
+}
+AppContextMaker.Tests.Input {
+	shape: class
+#Fields:
+#Properties:
+#Methods:
+	"+GetKeyDown(Object escape)" : "Boolean"
+}
+AppContextMaker.Tests.Time {
+	shape: class
+#Fields:
+	"+timeScale" : "AppContextMaker.Tests.Time"
+#Properties:
+#Methods:
+}
+AppContextMaker.Tests.Cursor {
+	shape: class
+#Fields:
+	"+visible" : "AppContextMaker.Tests.Cursor"
+#Properties:
+#Methods:
+}
+AppContextMaker.Tests.SceneManager {
+	shape: class
+#Fields:
+#Properties:
+#Methods:
+	"+LoadScene(Int32 buildIndex)" : "Void"
+	"+GetActiveScene()" : "Object"
+}
+AppContextMaker.Tests.GameObject {
+	shape: class
+#Fields:
+#Properties:
+#Methods:
+	"+SetActive(Boolean b)" : "Void"
+}
+AppContextMaker.Tests.TestClassA {
+	shape: class
+#Fields:
+#Properties:
+	"+Name {get; set;}" : "String"
+	"+overriden {get; set;}" : "String"
+#Methods:
+	"+Say()" : "Void"
+}
+AppContextMaker.Tests.TestClassAParent {
+	shape: class
+#Fields:
+#Properties:
+	"+value {get; set;}" : "Int32"
+	"+overriden {get; set;}" : "String"
+#Methods:
+}
+#Connections
+AppContextMaker.Tests.PauseMenu -> AppContextMaker.Tests.GameObject 
+AppContextMaker.Tests.TestClassA -> AppContextMaker.Tests.TestClassAParent : Inherits

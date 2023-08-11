@@ -1,0 +1,13 @@
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\bin\Debug\net7.0\d2.exe
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\bin\Debug\net7.0\AppExplorer.deps.json
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\bin\Debug\net7.0\AppExplorer.dll
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\bin\Debug\net7.0\AppExplorer.pdb
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.csproj.AssemblyReference.cache
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.AssemblyInfoInputs.cache
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.AssemblyInfo.cs
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.csproj.CoreCompileInputs.cache
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.dll
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\refint\AppExplorer.dll
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\AppExplorer.pdb
+C:\Users\megah\Documents\Github\D2-WASM\AppDiagram\AppExplorer\obj\Debug\net7.0\ref\AppExplorer.dll

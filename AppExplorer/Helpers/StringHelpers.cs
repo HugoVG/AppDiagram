@@ -51,12 +51,9 @@ public class StringHelpers
         return false;
     }
 
-    public static bool RemoveVoidsAndEmpty(string fromString, string toString)
-    {
-        if (fromString.ToLower() == "void" || toString.ToLower() == "void" || fromString == "" || toString == "")
-            return true;
-        return false;
-    }
+    private const string VoidKeyword = "void"; 
+
+    public static bool RemoveVoidsAndEmpty(string fromString, string toString) => IsEmptyOrVoid(fromString) || IsEmptyOrVoid(toString);
 
     public static string ObjectTypeToString(ObjectType objectType)
     {
@@ -77,13 +74,11 @@ public class StringHelpers
 
     public static string RemoveGeneric(string toString)
     {
-        if (toString.Contains("<"))
-        {
-            toString = toString.Substring(0, toString.IndexOf("<"));
-            //remove ">" if it exists
-            if (toString.EndsWith(">"))
-                toString = toString.Replace(">", "");
-        }
+        if (!toString.Contains("<")) return toString;
+        toString = toString.Substring(0, toString.IndexOf("<", StringComparison.Ordinal));
+        //remove ">" if it exists
+        if (toString.EndsWith(">"))
+            toString = toString.Replace(">", "");
 
         return toString;
     }
@@ -93,11 +88,14 @@ public class StringHelpers
         return input.Replace("<>", "").Replace("`", "");
     }
 
-    public string RemoveStockInLine(string s)
-    {
-        if (s == null) return "void";
-        return s.ReplaceForbiddenWords(LeftOutNameSpaces.ToArray());
-    }
+    public string RemoveStockInLine(string? s) => s == null ? "void" : s.ReplaceForbiddenWords(LeftOutNameSpaces.ToArray());
+
+    public static bool IsEmptyString(string s) => s == "";
+
+    public static bool IsVoidString(string s) =>
+        string.Equals(s, VoidKeyword, StringComparison.InvariantCultureIgnoreCase);
+
+    public static bool IsEmptyOrVoid(string s) => IsEmptyString(s) || IsVoidString(s);
 
     public string RecursiveTypeChecker(Type type)
     {

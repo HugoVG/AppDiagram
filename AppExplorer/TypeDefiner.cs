@@ -142,7 +142,6 @@ public class TypeDefiner
                 TypeDefinition = x.DeclaringType,
                 Visibility = CecilHelpers.GetVisibility(x)
             });
-            // Console.WriteLine($"\t\"{(x.IsPrivate ? "-" : "+")}{x.Name}\" : \"{removestocks.RecursiveTypeChecker(x.FieldType)}\"");
             if (!x.FieldType.IsPrimitive &&
                 !x.FieldType.IsGenericParameter &&
                 type.FullName != removestocks.RecursiveTypeChecker(x.FieldType) &&
@@ -154,30 +153,29 @@ public class TypeDefiner
         }
     }
 
-    private void ResolveProperties(TypeDefinition type, Class @class, StringHelpers removestocks, IDiagram package)
+    private void ResolveProperties(TypeDefinition type, Class @class, StringHelpers RemoveBuiltInTypes, IDiagram package)
     {
-        if (type.HasProperties)
+        if (!type.HasProperties) return;
+        // Console.WriteLine("\t#Properties:");
+        type.Properties.ToList().ForEach(x =>
         {
-            // Console.WriteLine("\t#Properties:");
-            type.Properties.ToList().ForEach(x =>
+            @class.Properties.Add(new Property
             {
-                @class.Properties.Add(new Property
-                {
-                    IsGet = x.GetMethod != null,
-                    IsSet = x.SetMethod != null,
-                    Name = x.Name,
-                    Type = removestocks.RecursiveTypeChecker(x.PropertyType),
-                    Visibility = CecilHelpers.GetVisibility(x),
-                    ReturnType = CecilHelpers.RefTypeToObject(x.GetMethod.ReturnType)
-                });
-                if (!x.PropertyType.IsPrimitive &&
-                    !x.PropertyType.IsGenericParameter &&
-                    removestocks.RemoveStockInLine(x?.PropertyType?.FullName) != null &&
-                    removestocks.RemoveStockInLine(x?.PropertyType?.FullName) != "")
-                {
-                    package.MakeTypedConnections(type, x.PropertyType);
-                }
+                IsGet = x.GetMethod != null,
+                IsSet = x.SetMethod != null,
+                Name = x.Name,
+                Type = RemoveBuiltInTypes.RecursiveTypeChecker(x.PropertyType),
+                Visibility = CecilHelpers.GetVisibility(x),
+                ReturnType = CecilHelpers.RefTypeToObject(x.GetMethod.ReturnType)
             });
-        }
+            string? fullname = x?.PropertyType?.FullName;
+            if (!x.PropertyType.IsPrimitive &&
+                !x.PropertyType.IsGenericParameter &&
+                RemoveBuiltInTypes.RemoveStockInLine(fullname) != null &&
+                RemoveBuiltInTypes.RemoveStockInLine(fullname) != "")
+            {
+                package.MakeTypedConnections(type, x.PropertyType);
+            }
+        });
     }
 }

@@ -8,15 +8,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Mono.Cecil" Version="0.11.4"/>
+        <PackageReference Include="Mono.Cecil" Version="0.11.4" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Remove="d2.exe"/>
+        <None Remove="d2.exe" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AppExplorer\AppExplorer.csproj"/>
+        <ProjectReference Include="..\AppExplorer\AppExplorer.csproj" />
     </ItemGroup>
 
 </Project>

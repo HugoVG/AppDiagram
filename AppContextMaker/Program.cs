@@ -14,5 +14,5 @@ foreach (var location in locations)
     int direction = random.Next(0, 4);
     Direction direction1 = (Direction)direction;
     TypeDefiner typeDefiner = new TypeDefiner();
-    typeDefiner.ReadDllTypes(location, new MDPackage());
+    typeDefiner.ReadDllTypes(location, new D2Package());
 }

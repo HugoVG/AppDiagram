@@ -83,7 +83,7 @@ public class D2Package : IDiagram
         foreach (var property in _class.Properties)
         {
             AllTexts.Add(
-                $"\t\"{VisibilityToString(property.Visibility)}{property.Name} {StringHelpers.PropertyGetSetToString(property)}\" : \"{removestocks.RecursiveTypeChecker(property.TypeDefinition)}\"");
+                $"\t\"{VisibilityToString(property.Visibility)}{property.Name} {StringHelpers.PropertyGetSetToString(property)}\" : \"{removestocks.RecursiveTypeChecker(property.ReturnType.TypeDefinition)}\"");
         }
 
         AllTexts.Add("#Methods:");

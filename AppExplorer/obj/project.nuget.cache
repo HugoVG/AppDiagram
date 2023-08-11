@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1wte1odReEh3FZ7V/g/dv34WSfXnWkkREEJUBJZ4/UxjUFYvWW16Hvj3oM20z2NZaNi/Ii/IHoW3omiVOr0bbw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\megah\\Documents\\Github\\D2-WASM\\AppDiagram\\AppExplorer\\AppExplorer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\megah\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512"
+  ],
+  "logs": []
+}
